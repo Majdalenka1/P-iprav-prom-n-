@@ -1,73 +1,26 @@
-package com.engeto.examples.Domaci_Ukol2;
+package com.engeto.examples;
 
-import java.math.BigDecimal;
+import java.time.LocalDate;
 
 public class Main {
 
     public static void main(String[] args) {
-        ukol();
-    }
-
-    public static void ukol1 () {
-        System.out.println("Hello world!");
-    }
-    public static void ukol2 () {
-        String uzivatel = "Karel";
-        System.out.println(uzivatel);
-    }
-
-    public static void ukol3 () {
-        int pocetLekci = 10;
-        System.out.println(pocetLekci);
-    }
-
-    public static void ukol4 () {
-        double cena = 10.0;
-        System.out.println(cena);
-    }
-
-    public static void ukol5 () {
-        double cena = 0;
-        for (int i = 0; i < 10; i++) {
-            cena += 0.1;
-        }
-        System.out.println(cena);
-        // Má vypsat "1.0". Ale vypíše "0.9999" !!!
-    }
-
-    public static void ukol6 () {
-
-        BigDecimal cena = new BigDecimal("0.1");
-        cena = cena.add(BigDecimal.valueOf(0.1));
-        System.out.println(cena);
-    }
-
-    public static void ukol7 () {
-        int vykonMotoru = 120;
-        System.out.println("Výkon Motoru je: " + vykonMotoru + " kW.");
-    }
-
-    public static void ukol8 () {
-        int velikostKosile = 37;
-        System.out.println("Velikost košile je: " + velikostKosile + " cm ");
-    }
-
-    public static void ukol9 () {
-        String Metoda = "Metoda";
-        System.out.println(Metoda + "  skoro  bez chybičky!");
-    }
-
-    public static void ukol () {
-        String ukol = "ukol9";
-        ukol1();
-        ukol2();
-        ukol3();
-        ukol4();
-        ukol5();
-        ukol6();
-        ukol7();
-        ukol8();
-        ukol9();
-        System.out.println("Ukol");
+        // write your code here
+        String clientName = "Anna Svobodova";
+        int sales = 28;
+        String nameOfCity = "Ostrava";
+        double consumption = 4.25;
+        double cableAvailable = 1265;
+        LocalDate dateOfBirth = LocalDate.of(1988, 11,4);
+        String registrationOfVehicle = "2OV 6528";
+        String ipAddress = "183.245.0.1";
+        System.out.printf("Client's name: %s\n", clientName);
+        System.out.printf("Numbers of sales: %d\n", sales);
+        System.out.printf("Name of City: %s\n", nameOfCity);
+        System.out.printf("Consumption of vehicle: %g l/100km\n", consumption);
+        System.out.printf("Available cable length: %g m\n", cableAvailable);
+        System.out.printf("Date of Birth %tF\n", dateOfBirth);
+        System.out.printf("Registration of Vehicle: %s\n", registrationOfVehicle);
+        System.out.printf("IP address: %s\n", ipAddress);
     }
 }
